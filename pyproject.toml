@@ -45,6 +45,7 @@ dependencies = [
     # "deepspeed==0.13.1",
     "deepspeed",
     "mpi4py",
+    "-r td_requirements.txt",
 ]
 dynamic = ["version"]
 
