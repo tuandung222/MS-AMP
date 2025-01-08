@@ -6,9 +6,10 @@ conda activate msamp
 
 
 # Install msccl
-cd third_party/msccl
 
 ```
+cd third_party/msccl
+
 # A100
 make -j src.build NVCC_GENCODE="-gencode=arch=compute_80,code=sm_80"
 
