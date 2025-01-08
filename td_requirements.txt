@@ -1,7 +1,7 @@
 accelerate==1.2.1
 annotated-types==0.7.0
 anykeystore==0.2
-apex @ file://./apex
+# apex @ file://./apex
 certifi==2024.12.14
 charset-normalizer==3.4.1
 colorlog==6.9.0
@@ -24,11 +24,11 @@ Jinja2==3.1.5
 kiwisolver==1.4.8
 MarkupSafe==3.0.2
 matplotlib==3.10.0
-mpi4py @ file:///home/conda/feedstock_root/build_artifacts/mpi4py_1728738639823/work
+# mpi4py @ file:///home/conda/feedstock_root/build_artifacts/mpi4py_1728738639823/work
 mpmath==1.3.0
 # -e git+https://github.com/Azure/MS-AMP.git@8de09e00c45ce1ce44dcd0ccf1d4e6e4f4ca04fa#egg=MS_AMP
-msamp_adamw @ file://./msamp/optim
-msamp_arithmetic @ file://./msamp/operators/arithmetic
+# msamp_adamw @ file://./msamp/optim
+# msamp_arithmetic @ file://./msamp/operators/arithmetic
 msgpack==1.1.0
 networkx==3.4.2
 ninja==1.11.1.3
