@@ -11,8 +11,18 @@ from msamp.common.dtype import Dtypes
 from msamp.common.tensor import TypeCast
 from msamp.common.utils import TransformerEngineWrapper
 
-
+# from contextlib import contextmanager
+# should_pretend_to_be_tt = False
+# @contextmanager
+# def pretend_scaling_is_torch():
+    # global should_pretend_to_be_tt
+    # should_pretend_to_be_tt = True
+    # yield
+    # should_pretend_to_be_tt = False
 class ScalingTensor:
+    # @property
+    # def __class__(self): return torch.Tensor if should_pretend_to_be_tt else ScalingTensor
+# class ScalingTensor:
     """Customized tensor with scaling."""
     class UniqueDtypeDecorator:
         """A decorator class to check whether dtype is supported and parameters are uniqie."""

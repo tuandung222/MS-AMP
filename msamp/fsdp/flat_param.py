@@ -4,7 +4,8 @@
 """MS-AMP fsdp.flat_param module."""
 
 import torch
-from torch.distributed.fsdp.flat_param import FlatParamHandle
+# NOTE: Modify by Tuan Dung
+from torch.distributed.fsdp._flat_param import FlatParamHandle
 
 
 class FP8FlatParamHandle(FlatParamHandle):

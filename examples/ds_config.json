@@ -33,7 +33,9 @@
       "initial_scale_power": 15
   },
   "msamp": {
-    "enabled": false
+    "enabled": false,
+    "opt_level": "O1|O2|O3",
+    "use_te": true
   },
   "wall_clock_breakdown": false,
   "zero_optimization": {

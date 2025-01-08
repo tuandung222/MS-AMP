@@ -456,7 +456,10 @@ class MSAMPDeepSpeedEngine(DeepSpeedEngine):
         else:
             TensorDist.all_reduce_sum(bucket)
 
+    # NOTE: modify by Tuan Dung
+    # def allreduce_and_copy(self, small_bucket, dp_group, dp_world_size=4):
     def allreduce_and_copy(self, small_bucket, dp_group):
+
         """All reudce tensors after flatten and copy to original tensors.
 
         Args:

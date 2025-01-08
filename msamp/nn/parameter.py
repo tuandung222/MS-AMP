@@ -5,8 +5,15 @@
 
 from msamp.common.tensor import ScalingTensor
 
+# NOTE: Modify by Tuan Dung
+import torch
+from msamp.common.tensor import ScalingTensor
+# import msamp.common.tensor.tensor as tensor_py
 
 class ScalingParameter(ScalingTensor):
+    # @property
+    # def __class__(self): return torch.Tensor if tensor_py.should_pretend_to_be_tt else ScalingParameter
+        
     """Parameter class for ScalingTensor."""
     def __init__(self, tensor, requires_grad=True):
         """Constructor.
